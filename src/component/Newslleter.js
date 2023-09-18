@@ -20,15 +20,15 @@ export default function Newslleter() {
                         <p className="text-[26px] font-semibold font-[Syne] break-words">Newslleter</p>
                         <p className="text-lg font-normal break-words text-center">Get news about articles and <br className="md:hidden"/>updates in your inbox.</p>
                     </div>
-                    <div class="grid grid-cols-1 gap-6 text-white">
-                        <label class="block">
-                            <input type="text" class="block w-full px-0.5 border-b-2 bg-transparent" placeholder="NAME"/>
+                    <div className="grid grid-cols-1 gap-6 text-white">
+                        <label className="block">
+                            <input type="text" className="block w-full px-0.5 border-b-2 bg-transparent" placeholder="NAME"/>
                         </label>
-                        <label class="block">
-                            <input type="email" class="block w-full px-0.5 border-b-2 bg-transparent" placeholder="EMAIL"/>
+                        <label className="block">
+                            <input type="email" className="block w-full px-0.5 border-b-2 bg-transparent" placeholder="EMAIL"/>
                         </label>
-                        <label class="block">
-                            <textarea class="block w-full px-0.5 border-b-2 bg-transparent" placeholder="MESSAGE" rows="1"></textarea>
+                        <label className="block">
+                            <textarea className="block w-full px-0.5 border-b-2 bg-transparent" placeholder="MESSAGE" rows="1"></textarea>
                         </label>
                     </div>
                     {/* <div className="flex flex-col items-start text-[#FFFFFF80] text-lg font-normal md:col-span-2">
@@ -47,7 +47,6 @@ export default function Newslleter() {
                     </div> */}
                 </div>
                     <div className="text-white text-[55px] md:text-[135px] font-[Syne] font-extrabold leading-[37.18px] md:leading-[102.60px] tracking-wider break-words mt-4 md:mt-[1.5rem]">GET <br/>IN <br className="md:hidden"/>TOUCH</div>
-                
                 </div>
         </div>
     </section>

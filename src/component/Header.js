@@ -1,5 +1,8 @@
-import React from 'react'
-import jessica from '../assests/jessica.png'
+import React from 'react';
+import jessica from '../assests/jessica.png';
+import jessicaFull from '../assests/jessica-full.png';
+import star3 from '../assests/Star-3.png';
+import {FiArrowUpRight} from 'react-icons/fi';
 
 export default function Header() {
 
@@ -16,7 +19,7 @@ export default function Header() {
         ];
         
   return (
-    <header className="w-full h-auto  bg-black">
+    <header className="relative w-full h-auto bg-black">
         <div className="flex flex-col justify-center">
             <div className="flex justify-between items-end px-4 lg:mx-[2.5rem]">
                 <div className="text-white text-3xl md:text-4xl font-light hover:cursor-pointer">ShopKart</div>
@@ -51,10 +54,21 @@ export default function Header() {
                     </li>
                 ))}
             </ul>
-      </nav>
-      <div>
-       <img src={jessica} alt="model" className="max-w-sm"/>
-      </div>
+        </nav>
+        <div className="overflow-hidden md:hidden py-5">
+            <img src={star3} alt="star" className="relative w-[90%] top-3 left-2/4"/>
+            <div className="h-[24vh]  bg-[#F07E15]"></div>
+            <img src={jessica} alt="model" className="absolute bottom-auto right-0 w-[60%]"/>
+        </div>
+        <div className="overflow-hidden hidden md:block">
+            <img src={star3} alt="star" className="relative w-[23%] left-3/4"/>
+            <div className="h-[24vh] ml-96 bg-[#F07E15]"></div>
+            <img src={jessicaFull} alt="model" className="absolute bottom-10 right-28 w-[25%]"/>
+        </div>
+        <div className="flex items-center gap-2 border-2 border-white w-fit ml-5 mt-2 text-white text-lg font-normal hover:cursor-pointer">
+            See more
+            <FiArrowUpRight className="w-4 h-4 font-semibold"/>
+        </div>
     </header>
   )
 }
