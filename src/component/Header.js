@@ -35,16 +35,16 @@ export default function Header(state, setNewState) {
             <div className="cursor-pointer">WISHLIST (0)</div>
             <div className="cursor-pointer">BAG (0)</div>
           </div>
-          {gState === "open" ? (
+          {gState === "close" ? (
             <div
-              onClick={setNewGState("open")}
+              onClick={() => setNewGState("open")}
               className="md:hidden text-white text-3xl"
             >
               <a href="#">&#8801;</a>
             </div>
           ) : (
             <div
-              onClick={setNewGState("close")}
+              onClick={() => setNewGState("close")}
               className="md:hidden text-white text-3xl"
             >
               <a href="#">&#8801;</a>
